@@ -1,0 +1,11 @@
+using System.Net.Http;
+using System.Threading.Tasks;
+
+public class DynamicCode
+{
+    public static async Task<string> GetPublicIP()
+    {
+        using HttpClient client = new HttpClient();
+        return await client.GetStringAsync("https://api.ipify.org");
+    }
+}
