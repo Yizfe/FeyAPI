@@ -3,7 +3,8 @@ using System.Threading.Tasks;
 
 public class DynamicCode
 {
-    public static async Task<string> GetPublicIP()
+    // Main method to be invoked dynamically
+    public static async Task<string> Execute()
     {
         using HttpClient client = new HttpClient();
         return await client.GetStringAsync("https://api.ipify.org");
