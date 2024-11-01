@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 
 public class DynamicCode
 {
-    // Main method to be invoked dynamically
     public static async Task<string> Execute()
     {
         using HttpClient client = new HttpClient();
